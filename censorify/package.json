@@ -1,16 +1,29 @@
 {
-  "author":"lpw",
-  "name": "censorify",
+  "author": "lpw",
+  "name": "censorify-lpw",
   "version": "1.0.0",
   "description": "Censors words out of text",
   "main": "censortext",
-  "repository":{
+  "repository": {
     "type": "git",
-    "url": "https://github.com/siyichengxiao/mynodemodules.git"
+    "url": "git+https://github.com/siyichengxiao/mynodemodules.git"
   },
-  "keywords": ["lpw","censorify-lpw","censorify","lipw-test"],
+  "keywords": [
+    "lpw",
+    "censorify-lpw",
+    "censorify",
+    "lipw-test"
+  ],
   "dependencies": {},
   "engines": {
-    "node":"*"
-  }
+    "node": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/siyichengxiao/mynodemodules/issues"
+  },
+  "homepage": "https://github.com/siyichengxiao/mynodemodules#readme",
+  "scripts": {
+    "test": "第一次"
+  },
+  "license": "ISC"
 }
