@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "description": "Censors words out of text",
   "main": "censortext",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/siyichengxiao/mynodemodules.git"
+  },
+  "keywords": ["lpw","censorify"],
   "dependencies": {},
   "engines": {
     "node":"*"
