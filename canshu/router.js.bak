@@ -1,0 +1,30 @@
+var url = require('url');
+var readhtml = require('./readhtml');
+function getRecall(req,res){
+	res.writeHead(200,{'Contet-Type':'text/html;charset=utf-8'});
+	function recall(data){
+		res.write(data);
+		res.end('');
+	}
+	return recall;
+}
+
+module.exports={
+	login:function(req,res){
+		var rdata = url.parse(req.url,true).query;
+		console.log(rdata);
+		if(rdata['email']!=undefined){
+			console.log('email===='+rdata['email']);
+			console.log('password='+rdata['pwd']);
+			//res.write('email===='+rdata['email']+',password='+rdata['pwd']);
+			//res.end('');
+		}
+
+		recall = getRecall(req,res);
+		readhtml.login('./login.html',recall);
+	},
+	showimg:function(req,res){
+		res.writeHead(200,{'Contet-Type':'text/html;charset=utf-8'});
+		readhtml.showimg('./1.jpg',res);
+	}
+}

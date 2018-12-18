@@ -1,0 +1,17 @@
+var fs = require('fs');
+module.exports={
+	writefile:function(path,data,recall){
+		fs.writeFile(path,data,function(err){
+			if(err){
+				throw err;
+			}
+			console.log('It\' saved!，异步写文件完成');
+			recall('异步写文件成功')
+		});
+	},
+	writeFileSync:function(path,data){
+		fs.writeFileSync(path,data);
+		console.log('同步写文件完成');
+	} 
+
+}
